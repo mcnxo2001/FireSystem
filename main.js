@@ -52,11 +52,11 @@ function FlashingItemWarning(Name, Status) {
 function FlashingItemSolution(Name, Status) {
     var Item = document.getElementById(Name)
     if (Status == 1) {
-        Item.style.backgroundColor = "#acffa7";
+        Item.style.backgroundColor = "#74ff6b";
         setTimeout(function () {
             Item.style.backgroundColor = "rgb(193 249 255 / 85%)"
         }, 500)
-        Item.style.backgroundColor = "#acffa7";
+        Item.style.backgroundColor = "#74ff6b";
     }
 }
 
