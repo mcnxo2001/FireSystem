@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ án hệ thống báo cháy</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.js">
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+</head>
+
+<body>
+    <div class="TopPage">
+        <div>HỆ THỐNG CẢNH BÁO CHÁY</div>
+        <div class="ImgTopPage"><img src="img/uet.png"></div>
+    </div>
+    <div class="MidPage">
+        <div class="MidPageItem" id="WarningSmoke">
+            <img src="img/smoking.png" alt="">
+            <div class="infor" id="InForSmoke">Không phát hiện khói</div>
+        </div>
+        <div class="MidPageItem" id="WarningFire">
+            <img src="img/fire.png" alt="">
+            <div class="infor" id="InForFire">Không phát hiện lửa</div>
+        </div>
+        <div class="MidPageItem" id="SolutionFan">
+            <img src="img/fan.png" alt="">
+            <div class="infor" id="InForFan">Hệ thống thông gió sẵn sàng</div>
+        </div>
+        <div class="MidPageItem" id="SolutionWater">
+            <img src="img/water.png" alt="">
+            <div class="infor" id="InForWater">Hệ thống bơm nước sẵn sàng</div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
