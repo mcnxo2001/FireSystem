@@ -3,7 +3,6 @@ body {
     background-image: url(img/backgr.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .TopPage {
@@ -24,6 +23,9 @@ body {
 .ImgTopPage {
     position: absolute;
     left: 20px;
+}
+.Topic{
+    text-align: center;
 }
 
 .TopPage img {
@@ -69,4 +71,23 @@ body {
     height: 50px;
     object-fit: cover;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .TopPage{
+        flex-direction: column;
+    }
+    .ImgTopPage{
+        position: unset;
+    }
+    .Topic{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .MidPage{
+        zoom: 0.8;
+    }
+    html{
+        height: 100%;
+    }
 }
