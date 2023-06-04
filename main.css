@@ -1,8 +1,13 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     background-image: url(img/backgr.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 .TopPage {
@@ -24,7 +29,8 @@ body {
     position: absolute;
     left: 20px;
 }
-.Topic{
+
+.Topic {
     text-align: center;
 }
 
@@ -73,25 +79,86 @@ body {
     margin-bottom: 20px;
 }
 
+.BottomPage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.InforPage{
+    margin-left: 30px;
+}
+
+.InforPageItem {
+    color: white;
+}
+
+.LinkInfor {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.LinkInfor img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 20%;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
-    .TopPage{
+    .TopPage {
         flex-direction: column;
     }
-    .ImgTopPage{
+
+    .ImgTopPage {
         position: unset;
     }
-    .Topic{
+
+    .Topic {
         font-size: 22px;
         margin-top: 20px;
     }
-    .MidPage{
+
+    .MidPage {
         zoom: 0.8;
     }
-    html{
-        height: 100%;
-    }
+
     .TopPage img {
         height: 130px;
         object-fit: cover;
+    }
+
+    html {
+        height: max-content;
+    }
+
+    .BottomPage {
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+        position: unset;
+    }
+
+    .LinkInfor {
+        margin-bottom: 10px;
+        margin-right: unset;
+    }
+
+    .InforPageItem {
+        font-size: 14px;
+    }
+
+    .LinkInfor img {
+        width: 30px;
+        height: 30px;
+    }
+    .InforPage{
+        margin-left: unset;
     }
 }
